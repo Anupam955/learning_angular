@@ -1,0 +1,41 @@
+------------------------------------------------------------------------------------
+Angular is a javascript framework, helps to create a SPA(Single Page Application)
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+SPA:- one single html file(index.html)
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+https://nodejs.org/en/download/
+-------------------------------------------------------------------------------------
+sudo npm install -g @angular/cli
+-------------------------------------------------------------------------------------
+mkdir newfolder
+cd newfolder
+--------------------------------
+ng new my-first-app1 --no-strict --standalone false --routing false
+
+Error might came 1st time;
+use this command
+sudo chown -R 501:20 "/Users/anupamghosh/.npm"
+cd my-first-app1
+ng serve
+
+-----------------------------------------------------------------------
+all the dependencies for the project will be installed in package.json
+------------------------------------------------------------------------
+#app.component.ts:
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'Welcome to my-first-app1';
+}
+
+-----------------------------------------------------------
+ngModule- directive
+----------------------------------------------------------
+
